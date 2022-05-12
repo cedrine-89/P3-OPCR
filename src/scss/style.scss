@@ -1,0 +1,15 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./layout/header";
+
+@include font-face(Roboto, "./../font/Roboto/Roboto-Black", normal, normal);
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: $font-color;
+}
