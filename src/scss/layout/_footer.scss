@@ -1,0 +1,23 @@
+footer {
+    padding: 2rem;
+    color: white;
+    background: #353535;
+    > p {
+        font-family: Shrikhand, serif;
+        font-size: 2rem;
+    }
+    ul {
+        list-style: none;
+        li {
+            margin: 1rem 0;
+        }
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

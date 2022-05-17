@@ -1,0 +1,50 @@
+.restaurant {
+    padding: 2rem;
+    &__title {
+
+    }
+    &__card {
+        position: relative;
+        border-radius: 15px;
+        margin: 2rem 0;
+        &_container_img {
+            height: 250px;
+        }
+        &_img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        &_body {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            & p > span {
+                font-family: RobotoLigth, serif;
+            }
+        }
+        &_container_icon {
+            position: relative;
+            width: 30px;
+            height: 30px;
+        }
+        &_icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5rem;
+        }
+        &_button {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            padding: .5rem 1rem;
+            background: $tertiary-color;
+            color: darken($tertiary-color, 90%);
+            border: 0;
+            border-radius: 2px;
+        }
+    }
+}

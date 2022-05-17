@@ -1,0 +1,17 @@
+.presentation {
+    padding: 2rem 0;
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+
+    }
+    &__body {
+
+    }
+    &__link {
+        text-decoration: none;
+    }
+}
