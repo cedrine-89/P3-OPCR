@@ -1,0 +1,73 @@
+@import './../utils/keyframes';
+.menu__restaurant {
+    background-color: $section-bg-color;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    margin-top: -50px;
+    padding: 1.5rem;
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        font-family: Shrikhand, Roboto, sans-serif;
+        &_item h3 {
+            position: relative;
+            color: gray;
+            text-transform: uppercase;
+            &::after {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: -10px;
+                width: 5%;
+                height: 4px;
+                background: $tertiary-color;
+            }
+        }
+    }
+    &__option {
+        position: relative;
+        opacity: 0;
+        padding: 1rem;
+        margin: 1rem 0;
+        background: white;
+        border-radius: 1rem;
+        @include boxShadow($offsetX: 2px, $offSetY: 3px, $blur: 6px, $spreadRadius: 0, $color: #aaa);
+        animation: appearance 600ms ease-in-out;
+        animation-fill-mode: forwards;
+        @for $i from 1 through 9 {
+            & {
+                &:nth-child(#{$i}) {
+                    animation-delay: $i * 100ms;
+                }
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            &::after {
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 0;
+                height: 100%;
+                width: 0;
+                border-radius: 0 1rem 1rem 0;
+                background: $tertiary-color;
+                animation: optionAfter 400ms forwards;
+            }
+        }
+        & h4 {
+            margin-bottom: 5px;
+        }
+        & p:last-child {
+            color: gray;
+            display: flex;
+            justify-content: space-between;
+            font-family: sans-serif;
+            & span {
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.about {
+    background: $section-bg-color;
+    text-align: center;
+    width: 100%;
+    padding: 40px 0;
+    h2 {
+        font-weight: bold;
+    }
+    p {
+        color: #4d4d4d;
+    }
+    &__btn {
+        color: $font-color-white;
+        padding: 1rem 1.2rem;
+        border-radius: 1.5rem;
+        text-decoration: none;
+        background: $linear-gradient;
+        cursor: pointer;
+        @include boxShadow($offsetX: 2px, $offSetY: 3px, $blur: 6px, $spreadRadius: 0, $color: #aaa);
+    }
+}

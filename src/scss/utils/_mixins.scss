@@ -3,13 +3,13 @@
 // =============================================================================
 
 @function str-replace($string, $search, $replace: "") {
-  $index: str-index($string, $search);
+    $index: str-index($string, $search);
 
-  @if $index {
-    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
-  }
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
 
-  @return $string;
+    @return $string;
 }
 
 // =============================================================================
@@ -17,28 +17,58 @@
 // =============================================================================
 
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
-  $src: null;
+    $src: null;
 
-  $extmods: (
-          eot: "?",
-          svg: "#" + str-replace($name, " ", "_")
-  );
+    $extmods: (
+            eot: "?",
+            svg: "#" + str-replace($name, " ", "_")
+    );
 
-  $formats: (
-          otf: "opentype",
-          ttf: "truetype"
-  );
+    $formats: (
+            otf: "opentype",
+            ttf: "truetype"
+    );
 
-  @each $ext in $exts {
-    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
-    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
-    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
-  }
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
 
-  @font-face {
-    font-family: quote($name);
-    font-style: $style;
-    font-weight: $weight;
-    src: $src;
-  }
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+@mixin boxShadow($inset: false, $offsetX: 0, $offSetY: 0, $blur: 0, $spreadRadius: 0, $color: #000) {
+    @if $inset {
+        box-shadow: inset $offsetX $offSetY $blur $spreadRadius $color;
+    } @else {
+        box-shadow: $offsetX $offSetY $blur $spreadRadius $color;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width:map-get($breakpoint, tablet)){
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width:map-get($breakpoint, desktop)){
+        @content;
+    }
+}
+@mixin lgScreen {
+    @media screen and (min-width:map-get($breakpoint, lgScreen)){
+        @content;
+    }
+}
+
+@mixin mdScreen {
+    @media screen and (min-width: map-get($breakpoint, mdScreen)) {
+        @content;
+    }
 }

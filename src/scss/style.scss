@@ -3,11 +3,14 @@
 @import "./utils/mixins";
 @import "./layout/spacing";
 @import "./layout/header";
+@import "./layout/about";
 @import "./layout/btn";
 @import "./layout/presentation";
 @import "./layout/working";
 @import "./layout/restaurant";
+@import "./layout/menu_restaurant";
 @import "./layout/footer";
+@import "./layout/container";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
 
 @include font-face(Roboto, "./../../public/font/Roboto/Roboto-Black", normal, normal);
@@ -15,8 +18,8 @@
 @include font-face(Shrikhand, "./../../public/font/Shrikhand/Shrikhand-Regular", normal, normal);
 
 body {
-    color: $font-color;
-    font-family: Roboto, serif;
+    color: $font-color-dark;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 

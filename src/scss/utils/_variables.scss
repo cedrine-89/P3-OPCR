@@ -1,8 +1,12 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
-$font-color: #000;
+$font-color-dark: #000;
+$font-color-white: #FFF;
 
-$main-bg-color:     #FFF;
-$secondary-bg-color: #F6F6F6;
-$tertiary-bg-color: #EAEAEA;
+$linear-gradient: linear-gradient(to top, $primary-color, $secondary-color);
+
+$main-bg-color: #FFF;
+$section-bg-color: #f6f6f6;
+
+$breakpoint: (tablet: 768px, desktop: 1280px, mdScreen: 1400px, lgScreen: 1600px);

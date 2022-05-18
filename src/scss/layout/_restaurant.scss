@@ -1,14 +1,32 @@
 .restaurant {
     padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 1%;
+    background: $section-bg-color;
     &__title {
-
+        flex-basis: 100%;
     }
     &__card {
+        flex-basis: 100%;
         position: relative;
         border-radius: 15px;
-        margin: 2rem 0;
+        margin: 1rem 0;
+        background: white;
+        @include tablet {
+            flex-basis: 49%;
+            margin: 2rem 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
         &_container_img {
-            height: 250px;
+            height: 200px;
+            @include desktop {
+                height: 250px;
+            }
         }
         &_img {
             width: 100%;
