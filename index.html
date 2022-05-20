@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/f66e2f8b67.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./public/css/style.css">
@@ -22,35 +22,36 @@
         <span>
             <i class="fas fa-map-marker-alt"></i>
         </span>
-            <span class="map__search">
+        <span class="map__icon"></span>
+        <form action="/" class="map__search">
             <input type="search" name="city" placeholder="Paris,Belleville"/>
-        </span>
+        </form>
     </div>
     <!-- Section Maps -->
     <!-- Section About -->
-    <div class="about">
+    <div class="about mb-3">
         <h2 class="mb-1">Réservez le menu qui vous convient</h2>
-        <p class="mb-3">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-        <a href="#" class="about__btn">Explorer nos restaurants</a>
+        <p class="mb-3">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+        <div class="mb-2"><a href="#" class="about__btn">Explorer nos restaurants</a></div>
     </div>
     <!-- END Section About -->
     <!-- Section Fonctionnement -->
-    <section class="working mt-1">
+    <section class="working mb-3">
         <h2 class="working__title">Fonctionnement</h2>
         <ul class="working__choice">
             <li class="working__choice_card">
+                <div><i class="fas fa-mobile-alt fa-2x working__choice--icon"></i></div>
                 <div class="working__choice--notify"><p>1</p></div>
-                <div><i class="fas fa-mobile-alt working__choice--icon"></i></div>
                 <p>Choisissez un restaurant</p>
             </li>
             <li class="working__choice_card">
+                <div><i class="fas fa-list-ul fa-2x working__choice--icon"></i></div>
                 <div class="working__choice--notify"><p>2</p></div>
-                <div><i class="fas fa-list-ul working__choice--icon"></i></div>
                 <p>Composez votre menu</p>
             </li>
             <li class="working__choice_card">
+                <div><i class="fas fa-store fa-2x working__choice--icon"></i></div>
                 <div class="working__choice--notify"><p>3</p></div>
-                <div><i class="fas fa-store working__choice--icon"></i></div>
                 <p>Dégustez au restaurant</p>
             </li>
         </ul>
@@ -58,61 +59,69 @@
     <!-- END Section Fonctionnement -->
     <!-- Section Restaurant -->
     <div class="restaurant">
-        <h2 class="restaurant__title mb-2">Restaurants</h2>
+        <h2 class="restaurant__title">Restaurants</h2>
         <div class="restaurant__card shadow">
             <a href="#">
-                <div class="restaurant__card_container_img">
-                    <img src="./public/img/restaurants/la-palette-du-gout.jpg" alt="" class="restaurant__card_img">
+                <div class="restaurant__card__container__img">
+                    <img src="./public/img/restaurants/la-palette-du-gout.jpg" alt="" class="restaurant__card__img">
                 </div>
-                <button class="restaurant__card_button">Nouveau</button>
-                <div class="restaurant__card_body">
-                    <p>La palette du goût
+                <div class="restaurant__card__button">Nouveau</div>
+                <div class="restaurant__card__body">
+                    <p>
+                        <span class="bold">La palette du goût</span>
                         <br><span>Ménilmontant</span></p>
-                    <div class="restaurant__card_container_icon">
-                        <i class="bi bi-heart restaurant__card_icon"></i>
+                    <div class="restaurant__card__icon">
+                        <i class="bi bi-heart fa-2x restaurant__card__icon__item restaurant__card__icon--visible"></i>
+                        <i class="bi bi-heart-fill fa-2x restaurant__card__icon__item restaurant__card__icon--invisible"></i>
                     </div>
                 </div>
             </a>
         </div>
         <div class="restaurant__card shadow">
             <a href="#">
-                <div class="restaurant__card_container_img">
-                    <img src="./public/img/restaurants/la-note-enchantee.jpg" alt="" class="restaurant__card_img">
+                <div class="restaurant__card__container__img">
+                    <img src="./public/img/restaurants/la-note-enchantee.jpg" alt="" class="restaurant__card__img">
                 </div>
-                <button class="restaurant__card_button">Nouveau</button>
-                <div class="restaurant__card_body">
-                    <p>La note enchantée
+                <div class="restaurant__card__button">Nouveau</div>
+                <div class="restaurant__card__body">
+                    <p>
+                        <span class="bold">La note enchantée</span>
                         <br><span>Charonne</span></p>
-                    <div class="restaurant__card_container_icon">
-                        <i class="bi bi-heart restaurant__card_icon"></i>
+                    <div class="restaurant__card__icon">
+                        <i class="bi bi-heart fa-2x restaurant__card__icon__item restaurant__card__icon--visible"></i>
+                        <i class="bi bi-heart-fill fa-2x restaurant__card__icon__item restaurant__card__icon--invisible"></i>
                     </div>
                 </div>
             </a>
         </div>
         <div class="restaurant__card shadow">
             <a href="./restaurant/a-la-francaise.html">
-                <div class="restaurant__card_container_img">
-                    <img src="./public/img/restaurants/a-la-francaise.jpg" alt="" class="restaurant__card_img">
+                <div class="restaurant__card__container__img">
+                    <img src="./public/img/restaurants/a-la-francaise.jpg" alt="" class="restaurant__card__img">
                 </div>
-                <div class="restaurant__card_body">
-                    <p>À la française
+                <div class="restaurant__card__body">
+                    <p>
+                        <span class="bold">À la française</span>
                         <br><span>Cité Rouge</span></p>
-                    <div class="restaurant__card_container_icon">
-                        <i class="bi bi-heart restaurant__card_icon"></i>
+                    <div class="restaurant__card__icon">
+                        <i class="bi bi-heart fa-2x restaurant__card__icon__item restaurant__card__icon--visible"></i>
+                        <i class="bi bi-heart-fill fa-2x restaurant__card__icon__item restaurant__card__icon--invisible"></i>
                     </div>
                 </div>
             </a>
         </div>
         <div class="restaurant__card shadow">
             <a href="#">
-                <div class="restaurant__card_container_img">
-                    <img src="./public/img/restaurants/le-delice-des-sens.jpg" alt="" class="restaurant__card_img">
+                <div class="restaurant__card__container__img">
+                    <img src="./public/img/restaurants/le-delice-des-sens.jpg" alt="" class="restaurant__card__img">
                 </div>
-                <div class="restaurant__card_body">
-                    <p>Le délice des sens
+                <div class="restaurant__card__body">
+                    <p>
+                        <span class="bold">Le délice des sens</span>
                         <br><span>Folie-Méricourt</span></p>
-                    <div class="restaurant__card_container_icon">
-                        <i class="bi bi-heart restaurant__card_icon"></i>
+                    <div class="restaurant__card__icon">
+                        <i class="bi bi-heart fa-2x restaurant__card__icon__item restaurant__card__icon--visible"></i>
+                        <i class="bi bi-heart-fill fa-2x restaurant__card__icon__item restaurant__card__icon--invisible"></i>
                     </div>
                 </div>
             </a>
@@ -123,7 +132,7 @@
 <!-- END main -->
 <!-- Footer -->
 <footer>
-    <p class="mb-2">ohmyfood</p>
+    <p class="mb-1_5">ohmyfood</p>
     <ul>
         <li>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">

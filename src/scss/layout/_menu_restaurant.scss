@@ -1,11 +1,13 @@
 @import './../utils/keyframes';
+
 .menu__restaurant {
     background-color: $section-bg-color;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     width: 100%;
-    margin-top: -50px;
     padding: 1.5rem;
+    transform: translateY(-25px);
+    &
     &__title {
         display: flex;
         justify-content: space-between;
@@ -36,10 +38,8 @@
         animation: appearance 600ms ease-in-out;
         animation-fill-mode: forwards;
         @for $i from 1 through 9 {
-            & {
-                &:nth-child(#{$i}) {
-                    animation-delay: $i * 100ms;
-                }
+            &:nth-child(#{$i}) {
+                animation-delay: $i * 100ms;
             }
         }
         &:hover {

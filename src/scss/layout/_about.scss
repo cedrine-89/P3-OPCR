@@ -2,12 +2,13 @@
     background: $section-bg-color;
     text-align: center;
     width: 100%;
-    padding: 40px 0;
+    padding: 2rem;
     h2 {
         font-weight: bold;
     }
-    p {
-        color: #4d4d4d;
+    div > p {
+        color: $font-color-gray;
+        font-family: RobotoLigth, sans-serif;
     }
     &__btn {
         color: $font-color-white;
@@ -17,5 +18,8 @@
         background: $linear-gradient;
         cursor: pointer;
         @include boxShadow($offsetX: 2px, $offSetY: 3px, $blur: 6px, $spreadRadius: 0, $color: #aaa);
+        &:hover {
+            color: $font-color-dark;
+        }
     }
 }

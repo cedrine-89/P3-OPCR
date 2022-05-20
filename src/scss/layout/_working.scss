@@ -35,21 +35,29 @@
             color: $font-color-white;
         }
         &--icon {
-            width: 16px;
-            height: 16px;
             margin: 0 2rem;
+            color: $font-color-gray;
         }
         &_card {
             display: flex;
             flex-basis: 100%;
+            align-items: center;
             position: relative;
             padding: 2rem;
             margin: 1.5rem 0;
             border-radius: 1rem;
             background: $main-bg-color;
+            font-family: Roboto, sans-serif;
             @include boxShadow($inset: false, $offsetX: 2px, $offSetY: 3px, $blur: 6px, $spreadRadius: 0, $color: #aaa);
             @include tablet {
                 flex-basis: 100%;
+            }
+            &:hover {
+                cursor: pointer;
+                background: lighten($primary-color, 35%);
+            }
+            &:hover > div > .working__choice--icon {
+                color: $primary-color
             }
         }
     }

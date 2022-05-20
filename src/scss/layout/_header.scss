@@ -38,12 +38,16 @@
     @include boxShadow($inset: true, $offsetX: 0, $offSetY: 5px, $blur: 5px, $spreadRadius: 0, $color: #dddddd);
     &__search input {
         border: none;
-        background: #eaeaea;
+        background: darken($section-bg-color, 5%);
         font-size: 1rem;
         padding: 20px 5px 20px 5px;
         margin-top: 5px;
         text-align: center;
         width: 150px;
+        &::placeholder {
+            font-weight: bold;
+            color: $font-color-dark;
+        }
     }
     & .fas {
         font-size: 1.2rem;
