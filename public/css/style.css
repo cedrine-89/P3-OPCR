@@ -331,9 +331,10 @@
 }
 .restaurant__card__icon--visible:hover {
   cursor: pointer;
+  opacity: 0;
 }
 .restaurant__card__icon--visible:hover + .restaurant__card__icon--invisible {
-  animation: animateHeart 400ms forwards ease-in-out;
+  animation: animateHeart 300ms forwards ease-in-out;
 }
 .restaurant__card__item {
   position: absolute;

@@ -62,9 +62,10 @@
             }
             &--visible:hover {
                 cursor: pointer;
+                opacity: 0;
             }
             &--visible:hover + &--invisible {
-                animation: animateHeart 400ms forwards ease-in-out;
+                animation: animateHeart 300ms forwards ease-in-out;
             }
         }
         &__item {
