@@ -61,11 +61,10 @@
                  -webkit-text-fill-color: transparent;
             }
             &--visible:hover {
-                opacity: 1;
-                animation: animateHeart 400ms forwards ease-in-out;
+                cursor: pointer;
             }
             &--visible:hover + &--invisible {
-                animation: animateHeart2 400ms forwards ease-in-out;
+                animation: animateHeart 400ms forwards ease-in-out;
             }
         }
         &__item {

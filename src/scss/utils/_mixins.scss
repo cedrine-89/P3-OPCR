@@ -51,6 +51,10 @@
     }
 }
 
+@mixin loader() {
+
+}
+
 @mixin tablet {
     @media screen and (min-width:map-get($breakpoint, tablet)){
         @content;
