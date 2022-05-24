@@ -81,6 +81,11 @@
                 font-weight: bold;
             }
         }
+        &--price {
+            & span {
+                font-weight: bold;
+            }
+        }
     }
     &--validator {
         position: relative;

@@ -558,6 +558,9 @@ footer ul a {
 .card__body--desc span {
   font-weight: bold;
 }
+.card__body--price span {
+  font-weight: bold;
+}
 .card--validator {
   position: relative;
   height: 100%;
