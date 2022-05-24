@@ -545,7 +545,7 @@ footer ul a {
   flex-basis: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.8rem;
   height: 100%;
   background: #FFF;
   overflow: hidden;
@@ -557,6 +557,9 @@ footer ul a {
 }
 .card__body--desc span {
   font-weight: bold;
+}
+.card__body--price {
+  align-self: flex-end;
 }
 .card__body--price span {
   font-weight: bold;
