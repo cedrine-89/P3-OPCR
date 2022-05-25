@@ -1,24 +1,72 @@
 .loader {
-    position: absolute;
+    position: fixed;
     top: 0;
+    bottom: 0;
     left: 0;
-    min-height: 100vh;
+    right: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 97;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    flex-wrap: wrap;
+    font-size: 3rem;
     letter-spacing: .1px;
-    background: #FFF;
     font-family: Shrikhand, sans-serif;
+    background: #FFF;
+    animation: backgroundLoader 700ms 2500ms ease-in-out both;
+    & p {
+        position: relative;
+    }
     & p span {
         opacity: 0;
+        background-color: #f3ec78;
+        background-image: $linear-gradient-right;
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
         @for $i from 1 through 8 {
             &:nth-child(#{$i}) {
                 animation: loaderAnimate 500ms forwards;
-                animation-delay: $i * 100ms;
+                animation-delay: $i * 200ms;
             }
         }
     }
+}
+
+.loader__progress {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    animation: loaderAnimate 2000ms 200ms forwards;
+    & div {
+        position: absolute;
+        top: 33px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: $linear-gradient-right;
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+}
+
+.loader__progress div:nth-child(1) {
+    left: 8px;
+    animation: loader__progress1 0.6s infinite;
+}
+.loader__progress div:nth-child(2) {
+    left: 8px;
+    animation: loader__progress2 0.6s infinite;
+}
+.loader__progress div:nth-child(3) {
+    left: 32px;
+    animation: loader__progress2 0.6s infinite;
+}
+.loader__progress div:nth-child(4) {
+    left: 56px;
+    animation: loader__progress3 0.6s infinite;
 }
