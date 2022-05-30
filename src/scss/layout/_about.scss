@@ -20,6 +20,8 @@
         @include boxShadow($offsetX: 2px, $offSetY: 3px, $blur: 6px, $spreadRadius: 0, $color: #aaa);
         &:hover {
             color: $font-color-dark;
+            background: $linear-gradient-light;
+            @include boxShadow($offsetX: 3px, $offSetY: 4px, $blur: 7px, $spreadRadius: 0, $color: #aaa);
         }
     }
 }

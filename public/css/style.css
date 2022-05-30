@@ -220,6 +220,8 @@
 }
 .about__btn:hover {
   color: #000;
+  background: linear-gradient(to top, #a16be0, #ffc6ef);
+  box-shadow: 3px 4px 7px 0 #aaa;
 }
 
 .btn {

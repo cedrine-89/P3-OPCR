@@ -6,6 +6,7 @@ $font-color-white: #FFF;
 $font-color-gray: #8a8989;
 
 $linear-gradient: linear-gradient(to top, $primary-color, $secondary-color);
+$linear-gradient-light: linear-gradient(to top, lighten($primary-color, 5%), lighten($secondary-color, 15%));
 $linear-gradient-right: linear-gradient(to right, $primary-color, $secondary-color);
 $linear-gradient-heart: linear-gradient(to bottom, $primary-color, $secondary-color);
 
