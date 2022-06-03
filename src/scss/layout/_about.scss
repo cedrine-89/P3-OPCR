@@ -17,6 +17,7 @@
         text-decoration: none;
         background: $linear-gradient;
         cursor: pointer;
+        transition: all 500ms ease-in-out;
         @include boxShadow($offsetX: 2px, $offSetY: 3px, $blur: 6px, $spreadRadius: 0, $color: #aaa);
         &:hover {
             color: $font-color-dark;

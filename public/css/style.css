@@ -215,6 +215,7 @@
   text-decoration: none;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   cursor: pointer;
+  transition: all 500ms ease-in-out;
   box-shadow: 2px 3px 6px 0 #aaa;
 }
 .about__btn:hover {
