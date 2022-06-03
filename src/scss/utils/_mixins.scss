@@ -60,6 +60,11 @@
         @content;
     }
 }
+@mixin mdTablet {
+    @media screen and (min-width:map-get($breakpoint, mdTablet)){
+        @content;
+    }
+}
 @mixin desktop {
     @media screen and (min-width:map-get($breakpoint, desktop)){
         @content;
