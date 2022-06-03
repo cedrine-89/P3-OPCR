@@ -93,7 +93,7 @@
         height: 100%;
         width: 0;
         opacity: 0;
-        transition: all ease-in-out 400ms;
+        transition: all 400ms ease-in-out;
         background: $tertiary-color;
         & > div {
             display: flex;
@@ -104,8 +104,10 @@
             transform: translate(-50%, -50%);
         }
         & > div > svg {
+            transform: rotate(-360deg);
             opacity: 0;
             color: white;
+            transition: all 500ms ease-in-out;
         }
     }
     &:hover {
@@ -114,9 +116,11 @@
     &:hover &--validator {
         width: 35%;
         opacity: 1;
-        transition: all ease-in-out 400ms;
+        transition: all 400ms ease-in-out;
     }
     &:hover &--validator > div > svg {
-        animation: rotateValidator 500ms ease-in-out forwards;
+        transform: rotate(0);
+        opacity: 1;
+        transition: all 500ms ease-in-out;
     }
 }
