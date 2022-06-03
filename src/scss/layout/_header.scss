@@ -5,28 +5,14 @@
     background-color: $main-bg-color;
     padding: 1rem 0;
     z-index: 10;
-    & div a {
-        position: absolute;
-        top: 50%;
-        left: 5%;
-        width: 10%;
-        height: 100%;
-        transform: translate(-50%, -50%);
-        & i {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+    a {
+        color: $font-color-dark;
+        text-decoration: none;
     }
     &__title {
         font-family: Shrikhand, sans-serif;
         font-size: 2rem;
         font-weight: 500;
-        a {
-            color: $font-color-dark;
-            text-decoration: none;
-        }
     }
 }
 
