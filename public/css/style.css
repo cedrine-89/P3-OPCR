@@ -158,7 +158,7 @@
 }
 .main-header__title {
   font-family: Shrikhand, sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 
@@ -173,18 +173,16 @@
   border: none;
   background: #e9e9e9;
   font-size: 1rem;
-  padding: 20px 5px 20px 5px;
+  padding: 15px 5px 15px 5px;
   margin-top: 5px;
   text-align: center;
-  width: 150px;
-}
-.map__search input::placeholder {
+  width: 200px;
   font-weight: bold;
   color: #000;
 }
 .map .fas {
   font-size: 1.2rem;
-  margin-right: 1rem;
+  margin-right: 0;
 }
 
 .header__restaurant img {
