@@ -9,6 +9,20 @@
         color: $font-color-dark;
         text-decoration: none;
     }
+    & div a {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        width: 10%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        & i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
     &__title {
         font-family: Shrikhand, sans-serif;
         font-size: 2rem;

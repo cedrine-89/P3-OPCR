@@ -142,6 +142,20 @@
   color: #000;
   text-decoration: none;
 }
+.main-header div a {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 10%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+.main-header div a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .main-header__title {
   font-family: Shrikhand, sans-serif;
   font-size: 2rem;
