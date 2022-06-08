@@ -38,6 +38,9 @@
             display: flex;
             justify-content: space-between;
             padding: 1rem;
+            & p span {
+                font-family: RobotoRegular, sans-serif;
+            }
         }
         &__icon {
             position: relative;
@@ -61,6 +64,7 @@
                  -webkit-text-fill-color: transparent;
             }
             &--visible:hover {
+                opacity: 0;
                 cursor: pointer;
             }
             &--visible:hover + &--invisible {

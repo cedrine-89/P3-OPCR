@@ -45,7 +45,7 @@
 .card {
     flex-basis: 100%;
     @include tablet {
-        flex-basis: 33%;
+        flex-basis: 48%;
     }
     display: flex;
     align-items: center;
@@ -77,13 +77,16 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
+            font-family: RobotoRegular, sans-serif;
             & span {
+                font-family: Roboto, sans-serif;
                 font-weight: bold;
             }
         }
         &--price {
             align-self: flex-end;
             & span {
+                font-family: Roboto, sans-serif;
                 font-weight: bold;
             }
         }

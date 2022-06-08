@@ -3,10 +3,11 @@
     text-align: center;
     width: 100%;
     padding: 2rem;
-    h2 {
+    & h2 {
         font-weight: bold;
     }
-    div > p {
+    & div > p,
+    & p {
         color: $font-color-gray;
         font-family: RobotoLigth, sans-serif;
     }
